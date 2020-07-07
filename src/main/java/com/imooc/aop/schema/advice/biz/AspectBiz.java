@@ -11,4 +11,8 @@ public class AspectBiz {
         System.out.println("AspectBiz biz.");
 //      throw new RuntimeException();
     }
+
+    public void init(String bizName,int times){
+        System.out.println("AspectBiz init :" + bizName + "," + times);
+    }
 }

@@ -2,6 +2,7 @@ package Test.java.com.imooc.test.aop;
 
 import Test.java.com.imooc.test.base.UnitTestBase;
 import Test.java.com.imooc.test.beanannotation.TestJavabased;
+import main.java.com.imooc.aop.schema.advice.Fit;
 import main.java.com.imooc.aop.schema.advice.biz.AspectBiz;
 import org.junit.Test;
 
@@ -20,5 +21,17 @@ public class TestAOPSchemaAdvice extends UnitTestBase {
     public void testBiz() {
         AspectBiz biz = super.getBean("aspectBiz");
         biz.biz();
+    }
+
+    @Test
+    public void testInit() {
+        AspectBiz biz = super.getBean("aspectBiz");
+        biz.init("moocServices",3);
+    }
+
+    @Test
+    public void testFit() {
+        Fit fit = (Fit)super.getBean("aspectBiz");
+        fit.filter();
     }
 }
