@@ -13,8 +13,6 @@ import java.lang.reflect.Method;
  * @author: heqinz
  */
 public class MoocMethodInterceptor implements MethodInterceptor {
-
-
     @Override
     public Object invoke(MethodInvocation invocation) throws Throwable {
         System.out.println("MoocMethodInterceptor 1 : " + invocation.getMethod().getName() + "     " +
