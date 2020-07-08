@@ -13,7 +13,7 @@ import org.junit.Test;
 public class TestAOPAPI extends UnitTestBase {
 
     public TestAOPAPI() {
-        super("src\\main\\resources\\classpath:spring-aop-api.xml");
+        super("classpath:src\\main\\resources\\spring-aop-api.xml");
     }
 
     @Test
